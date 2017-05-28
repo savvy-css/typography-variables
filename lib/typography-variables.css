@@ -1,1 +1,16 @@
 /* @define typography-variables */
+
+:root {
+  /* ------ Letter Spacing --------- */
+
+  --letter-spacing: 1;
+  --letter-spacing--uppercase: 0.12em;
+
+
+  /* ------ Line Height Multipliers (For setting line height as a multiple of the current font size) --------- */
+
+  --line-height-1: 1;
+  --line-height-2: 1.125;
+  --line-height-3: 1.25;
+  --line-height-4: 1.5;
+}
