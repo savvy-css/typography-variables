@@ -1,0 +1,55 @@
+{
+  "name": "@savvy-css/typography-variables",
+  "version": "0.0.0",
+  "description": "Typography variables for Savvy CSS.",
+  "main": "build/typography-variables.css",
+  "style": "build/typography-variables.css",
+  "keywords": [
+    "savvy-css",
+    "savvy-css-package",
+    "savvy-css typography variables",
+    "savvy-css variables",
+    "css"
+  ],
+  "repository": {
+    "url": "https://github.com/savvy-css/typography-variables.git",
+    "type": "git"
+  },
+  "files": [
+    "build/"
+  ],
+  "bugs": {
+    "url": "https://github.com/savvy-css/typography-variables/issues"
+  },
+  "homepage": "https://github.com/savvy-css/typography-variables",
+  "author": "Brian Sipple <@Brian_Sipple>",
+  "license": "MIT",
+  "devDependencies": {
+    "@savvy-css/stylelint-config-savvy": "^0.1.0",
+    "cssnano": "^3.10.0",
+    "del-cli": "^1.0.0",
+    "live-server": "^1.2.0",
+    "nsp": "^2.6.3",
+    "postcss-cli": "^4.0.0",
+    "postcss-cssnext": "^2.11.0",
+    "postcss-import": "^10.0.0",
+    "postcss-reporter": "^3.0.0",
+    "stylelint": "^7.10.0"
+  },
+  "scripts": {
+    "clean": "del build/**",
+    "setup": "mkdir -p build",
+    "transform": "postcss index.css -o build/typography-variables.css --config postcss.config.js",
+    "transform:minify": "NODE_ENV=production postcss index.css -o build/typography-variables.css --config postcss.config.js",
+    "transform:watch": "postcss index.css -o build/typography-variables.css --config postcss.config.js -w",
+    "build": "npm run clean && npm run setup && npm run transform",
+    "build:dist": "npm run clean && npm run setup && npm run transform:minify",
+    "build:test": "npm run clean && postcss test/index-test.css -u postcss-import -u postcss-cssnext -o build/test.css -w",
+    "prepublish": "nsp check && npm run clean && npm run setup && npm run build:dist",
+    "serve": "live-server --port=9823 --open=/test",
+    "serve:test": "npm run build:test && npm run serve",
+    "lint:css": "npm run setup && postcss index.css -o build/linted.css --config test/postcss.config.js && rm build/linted.css",
+    "test": "npm run lint:css",
+    "deploy": "np"
+  }
+}

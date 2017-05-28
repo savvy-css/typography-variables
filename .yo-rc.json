@@ -1,0 +1,9 @@
+{
+  "@savvy-css/generator-savvy-css": {
+    "promptValues": {
+      "githubUserName": "BrianSipple",
+      "authorName": "Brian Sipple",
+      "authorContact": "@Brian_Sipple"
+    }
+  }
+}
