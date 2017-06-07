@@ -33,7 +33,7 @@
     "postcss-cli": "^4.0.0",
     "postcss-cssnext": "^2.11.0",
     "postcss-import": "^10.0.0",
-    "postcss-reporter": "^3.0.0",
+    "postcss-reporter": "^4.0.0",
     "stylelint": "^7.10.0"
   },
   "scripts": {
