@@ -34,7 +34,7 @@
     "postcss-cssnext": "^2.11.0",
     "postcss-import": "^10.0.0",
     "postcss-reporter": "^3.0.0",
-    "stylelint": "^7.10.0"
+    "stylelint": "^8.0.0"
   },
   "scripts": {
     "clean": "del build/**",
