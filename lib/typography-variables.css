@@ -13,4 +13,25 @@
   --line-height-2: 1.125;
   --line-height-3: 1.25;
   --line-height-4: 1.5;
+
+
+  /* ------ Font Sizes --------- */
+
+  --font-size-body: 1rem;
+
+  --font-size-display--lg: 3.5rem;
+  --font-size-display--xlg: calc(var(--font-size-display--lg) * 2);
+
+  --font-size-h1: 3rem;
+  --font-size-h2: 2.2rem;
+  --font-size-h3: 1.875rem;
+  --font-size-h4: 1.75rem;
+  --font-size-h5: 1.5rem;
+  --font-size-h6: 1.25rem;
+
+  --font-size-subheading: 1.15rem;
+
+  --font-size-caption: 0.875rem;
+
+  --font-size-button: 1rem;
 }
