@@ -41,7 +41,7 @@
     "deploy": "np"
   },
   "devDependencies": {
-    "@savvy-css/stylelint-config-savvy": "^0.1.0",
+    "@savvy-css/stylelint-config-savvy": "^0.2.0",
     "cssnano": "^3.10.0",
     "del-cli": "^1.0.0",
     "live-server": "^1.2.0",
