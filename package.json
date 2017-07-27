@@ -33,7 +33,7 @@
     "build": "npm run clean && npm run setup && npm run transform",
     "build:dist": "npm run clean && npm run setup && npm run transform:minify",
     "build:test": "npm run clean && postcss test/index-test.css -u postcss-import -u postcss-cssnext -o build/test.css -w",
-    "prepublish": "nsp check && npm run clean && npm run setup && npm run build:dist",
+    "prepublishOnly": "nsp check && npm run clean && npm run setup && npm run build:dist",
     "serve": "live-server --port=9823 --open=/test",
     "serve:test": "npm run build:test && npm run serve",
     "lint:css": "npm run setup && postcss lib/typography-variables.css -o build/linted.css --config test/postcss.config.js && rm build/linted.css",
