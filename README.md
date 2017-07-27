@@ -23,6 +23,17 @@ npm install --save-dev @savvy-css/typography-variables
 
 ## Usage
 
+Within a project that's capable of importing CSS, simply import
+the module by its package name within your own CSS:
+
+```css
+@import "@savvy-css/typography-variables";
+
+```
+
+Importing this module will add [its properties](/lib/typography-variables.css) to your project. To override them, simply define them in any portion of your CSS that's imported/processed later.
+
+
 
 [npm-badge]: https://img.shields.io/npm/v/@savvy-css/typography-variables.svg
 [npm-badge-url]: https://www.npmjs.com/package/@savvy-css/typography-variables

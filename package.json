@@ -24,6 +24,22 @@
   "homepage": "https://github.com/savvy-css/typography-variables",
   "author": "Brian Sipple <@Brian_Sipple>",
   "license": "MIT",
+  "scripts": {
+    "clean": "del build/**",
+    "setup": "mkdir -p build",
+    "transform": "postcss lib/typography-variables.css -o build/typography-variables.css --config postcss.config.js",
+    "transform:minify": "NODE_ENV=production postcss lib/typography-variables.css -o build/typography-variables.css --config postcss.config.js",
+    "transform:watch": "postcss lib/typography-variables.css -o build/typography-variables.css --config postcss.config.js -w",
+    "build": "npm run clean && npm run setup && npm run transform",
+    "build:dist": "npm run clean && npm run setup && npm run transform:minify",
+    "build:test": "npm run clean && postcss test/index-test.css -u postcss-import -u postcss-cssnext -o build/test.css -w",
+    "prepublish": "nsp check && npm run clean && npm run setup && npm run build:dist",
+    "serve": "live-server --port=9823 --open=/test",
+    "serve:test": "npm run build:test && npm run serve",
+    "lint:css": "npm run setup && postcss lib/typography-variables.css -o build/linted.css --config test/postcss.config.js && rm build/linted.css",
+    "test": "npm run lint:css",
+    "deploy": "np"
+  },
   "devDependencies": {
     "@savvy-css/stylelint-config-savvy": "^0.1.0",
     "cssnano": "^3.10.0",
@@ -35,21 +51,5 @@
     "postcss-import": "^10.0.0",
     "postcss-reporter": "^3.0.0",
     "stylelint": "^7.10.0"
-  },
-  "scripts": {
-    "clean": "del build/**",
-    "setup": "mkdir -p build",
-    "transform": "postcss index.css -o build/typography-variables.css --config postcss.config.js",
-    "transform:minify": "NODE_ENV=production postcss index.css -o build/typography-variables.css --config postcss.config.js",
-    "transform:watch": "postcss index.css -o build/typography-variables.css --config postcss.config.js -w",
-    "build": "npm run clean && npm run setup && npm run transform",
-    "build:dist": "npm run clean && npm run setup && npm run transform:minify",
-    "build:test": "npm run clean && postcss test/index-test.css -u postcss-import -u postcss-cssnext -o build/test.css -w",
-    "prepublish": "nsp check && npm run clean && npm run setup && npm run build:dist",
-    "serve": "live-server --port=9823 --open=/test",
-    "serve:test": "npm run build:test && npm run serve",
-    "lint:css": "npm run setup && postcss index.css -o build/linted.css --config test/postcss.config.js && rm build/linted.css",
-    "test": "npm run lint:css",
-    "deploy": "np"
   }
 }
