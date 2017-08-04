@@ -1,3 +1,8 @@
+# 0.2.1 &mdash; August 03, 2017
+
+- **[PATCH]** Fix publish build step,
+
+
 # 0.2.0 &mdash; August 03, 2017
 
 - **[BREAKING CHANGE]** Change `font-size-display--xlg` to `font-size-display--xl`.
