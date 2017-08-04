@@ -28,11 +28,9 @@ the module by its package name within your own CSS:
 
 ```css
 @import "@savvy-css/typography-variables";
-
 ```
 
 Importing this module will add [its properties](/lib/typography-variables.css) to your project. To override them, simply define them in any portion of your CSS that's imported/processed later.
-
 
 
 [npm-badge]: https://img.shields.io/npm/v/@savvy-css/typography-variables.svg
