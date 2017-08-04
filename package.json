@@ -1,6 +1,6 @@
 {
   "name": "@savvy-css/typography-variables",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Typography variables for Savvy CSS.",
   "main": "build/typography-variables.css",
   "style": "build/typography-variables.css",
