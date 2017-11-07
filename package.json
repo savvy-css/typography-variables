@@ -45,7 +45,7 @@
     "cssnano": "^3.10.0",
     "del-cli": "^1.0.0",
     "live-server": "^1.2.0",
-    "nsp": "^2.6.3",
+    "nsp": "^3.1.0",
     "postcss-cli": "^4.0.0",
     "postcss-cssnext": "^2.11.0",
     "postcss-import": "^10.0.0",
