@@ -48,7 +48,7 @@
     "nsp": "^2.6.3",
     "postcss-cli": "^4.0.0",
     "postcss-cssnext": "^2.11.0",
-    "postcss-import": "^10.0.0",
+    "postcss-import": "^11.1.0",
     "postcss-reporter": "^3.0.0",
     "stylelint": "^7.10.0"
   }
