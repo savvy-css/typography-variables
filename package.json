@@ -46,7 +46,7 @@
     "del-cli": "^1.0.0",
     "live-server": "^1.2.0",
     "nsp": "^2.6.3",
-    "postcss-cli": "^4.0.0",
+    "postcss-cli": "^6.0.1",
     "postcss-cssnext": "^2.11.0",
     "postcss-import": "^10.0.0",
     "postcss-reporter": "^3.0.0",
