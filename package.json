@@ -42,7 +42,7 @@
   },
   "devDependencies": {
     "@savvy-css/stylelint-config-savvy": "^0.1.0",
-    "cssnano": "^3.10.0",
+    "cssnano": "^4.1.7",
     "del-cli": "^1.0.0",
     "live-server": "^1.2.0",
     "nsp": "^2.6.3",
